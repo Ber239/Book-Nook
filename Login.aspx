@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentBody" Runat="Server">
     <div class="mainBody">
+        <div id="login">
             <asp:Login ID="LoginBox" runat="server"
             DestinationPageUrl="/SecuredPages/User_Profile.aspx"
 	        CreateUserText="Register for the first time"
@@ -16,5 +17,6 @@
             <InstructionTextStyle Font-Italic="true" />
             <FailureTextStyle ForeColor="Red" />
             </asp:Login>
+        </div>
     </div>    
 </asp:Content>

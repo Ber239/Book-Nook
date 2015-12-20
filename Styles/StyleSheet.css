@@ -1,0 +1,194 @@
+﻿
+.banner {
+    text-align:center;
+}
+.mainBody {
+    padding:10px;
+    text-align:center;
+}
+
+.footer {
+    height:100px;
+}
+.search {
+    text-align:right;
+    margin:0px 10px 0px 0px;
+}
+
+.Format {
+    margin:0 auto;
+}
+footer{
+    text-align:center;
+    font-size:small;
+}
+#BtnSubmit {
+    text-align:right;
+    margin:0px 10px 0px 0px;
+    color:black;
+    background-color:#ADD8E6;
+}
+#BtnLogout {
+    text-align:right;
+    margin:0px 10px 0px 1355px;
+    color:black;
+    background-color:#F1F1F1;
+}
+#GvCartDiv {
+    width:135px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*************************HomePage*************************/
+   #hmpg-img{
+            height:10em;
+            text-align:center;
+        }
+        .bkmnth{
+
+        }
+        .TbleRcntBk {
+            margin: 0 auto;
+            width:50%;
+            border: 1px solid black;
+        }
+        #RcntBk{
+            margin: 50px 0 0 0;
+        }
+        #hmpg_cal{
+                
+
+
+        }
+
+/***************************************************************/
+
+/******************** User Profile Edit*************************************/
+ .Format {
+            margin:3px;
+        }
+/***************************************************************/
+
+/******************************About Us*****************************/
+#img-about {
+            width:300px;
+        }
+
+/***************************************************************/
+
+
+/**************************Book Review******************************/
+ #ImgBook-review {
+            margin-left:300px;
+            height:300px;
+            width:200px;
+            float:left;
+        }
+#summary {
+            margin-left:600px;
+            height:300px;
+            width:600px;
+        }
+#reviews {
+            margin-top:20px;
+        }
+ /*.Format {
+            margin:5px;
+        }
+     */
+/***************************************************************/
+
+/**************************Cart**********************************/
+#ImgBook-cart {
+    height: 300px;
+    width: 200px;
+}
+/***************************************************************/
+
+/***********************Fav List***************************************/
+.Img-FavList{
+    height: 150px;
+}
+/***************************************************************/
+
+/***********************Check Out***************************************/
+.Format {
+            margin:3px;
+        }
+/***************************************************************/
+
+/***********************Full Store***************************************/
+
+/*table, td, th {
+            margin: 0 auto;
+            width:50%;
+            border: 1px solid black;
+        }
+    */
+/***************************************************************/
+/***********************Home Page***************************************/
+#hmpg-img{
+            height:10em;
+            text-align:center;
+        }
+        .bkmnth{
+
+        }
+        .TbleRcntBk {
+            margin: 0 auto;
+            width:50%;
+            border: 1px solid black;
+        }
+        #RcntBk{
+            margin: 50px 0 0 0;
+        }
+/***************************************************************/
+
+/***********************Registration***************************************/
+TxtBoxFormat {
+    width:200px;
+    margin:5px;
+}
+/***************************************************************/
+/***********************Search***************************************/
+.Format {
+            margin:3px;
+        }
+/***************************************************************/
+/***********************Wish List***************************************/
+.Images{
+            height: 150px;
+        }
+/***************************Admin Page**********************************/
+#select_roles {
+     
+   margin-left:auto;
+   margin-right:auto
+    
+}
+#usprof_cal{
+   
+   width:200px;
+   margin-left:auto;
+   margin-right:auto
+}
+
+
+/***************************************************************/
+
+/*****************************User_profile**********************************/
+#PassContl{
+  
+}
+#PnlFlUpld{
+  
+}
+   
+
+/****************************404***********************************/
+body { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8yOS8xMiKqq3kAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABHklEQVRIib2Vyw6EIAxFW5idr///Qx9sfG3pLEyJ3tAwi5EmBqRo7vHawiEEERHS6x7MTMxMVv6+z3tPMUYSkfTM/R0fEaG2bbMv+Gc4nZzn+dN4HAcREa3r+hi3bcuu68jLskhVIlW073tWaYlQ9+F9IpqmSfq+fwskhdO/AwmUTJXrOuaRQNeRkOd5lq7rXmS5InmERKoER/QMvUAPlZDHcZRhGN4CSeGY+aHMqgcks5RrHv/eeh455x5KrMq2yHQdibDO6ncG/KZWL7M8xDyS1/MIO0NJqdULLS81X6/X6aR0nqBSJcPeZnlZrzN477NKURn2Nus8sjzmEII0TfMiyxUuxphVWjpJkbx0btUnshRihVv70Bv8ItXq6Asoi/ZiCbU6YgAAAABJRU5ErkJggg==);}
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+
+/***************************************************************/

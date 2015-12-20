@@ -1,0 +1,17 @@
+﻿body {
+    background-color:#F1F1F1;
+}
+.header {
+    background-color:#F1F1F1;
+}
+.body {
+    background-color:#ADD8E6;
+}
+.footer {
+    background-color:#ADD8E6;
+}
+.nav
+    {
+        width:100%;
+        padding-left:15px;
+    }

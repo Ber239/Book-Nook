@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class User_Profile : System.Web.UI.Page
+public partial class UserProfile : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -22,6 +22,7 @@ public partial class User_Profile : System.Web.UI.Page
             {
                 LblFirstName.Text = Profile.FirstName;
                 LblLastName.Text = Profile.LastName;
+                LblFavGen.Text = Profile.Favorite_Genre;
                 LblDob.Text = Profile.DateOfBirth.ToShortDateString();
                 ShowAccountInfo.Visible = true;
                 ProvideInfo.Visible = false;

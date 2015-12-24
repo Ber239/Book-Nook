@@ -4,7 +4,7 @@
     <div class="mainBody">
         <div id="login">
             <asp:Login ID="LoginBox" runat="server"
-            DestinationPageUrl="/SecuredPages/User_Profile.aspx"
+            DestinationPageUrl="/SecuredPages/UserProfile.aspx"
 	        CreateUserText="Register for the first time"
 	        CreateUserUrl="/CreateUser.aspx" 
 	        InstructionText="Please enter your username and password."

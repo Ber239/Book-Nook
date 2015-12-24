@@ -5,7 +5,7 @@
             
         <h1>Admin Full Store</h1>
         
-            <asp:Button ID="AddPic" runat="server" Text="Upload images/Books"  PostBackUrl="~/AdminPages/BookPic_upload.aspx" />
+            <asp:Button ID="AddPic" runat="server" Text="Upload images/Books"  PostBackUrl="~/AdminPages/BookPicUpload.aspx" />
             <asp:SqlDataSource ID="DsBooks" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
                 SelectCommand="SELECT [Title], [Author], [Published], [Genre], [Price], [ID], [Summary], [PageNum], [ImageData] FROM [Books]"
                 UpdateCommand="UPDATE [Books] SET [Title] = @Title, [Author] = @Author, [Published] = @Published, [Genre] = @Genre, [Price] = @Price, [Summary] = @Summary, [PageNum] = @PageNum, [ImageData] = @ImageData WHERE [ID] = @ID" 
@@ -41,7 +41,7 @@
                 <Columns>
                       <asp:TemplateField HeaderText="Image">
                         <ItemTemplate>
-                             <asp:Image ID="ProductImage" runat="server" ImageUrl='<%# "ImageHandler.ashx?ID=" + Eval("Id") %>' />
+                             <asp:Image ID="ProductImage" Height="200px" runat="server" ImageUrl='<%# "ImageHandler.ashx?ID=" + Eval("Id") %>' />
                                     </ItemTemplate>
                                 </asp:TemplateField>
                     <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title"></asp:BoundField>

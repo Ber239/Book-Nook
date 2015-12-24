@@ -3,17 +3,12 @@
   <siteMapNode url="Default.aspx" title="Home Page"  description="Home Page" >
     <siteMapNode url="ContactUs.aspx" title="Contact Us" description="Contact Us" />
     <siteMapNode url="AboutUs.aspx" title="About Us" description="About Us" />
-    <siteMapNode url="SecuredPages/User_Profile.aspx" title="User Profile" description="User Profile">
+    <siteMapNode url="SecuredPages/UserProfile.aspx" title="User Profile" description="User Profile">
       <siteMapNode url="SecuredPages/FavoriteList.aspx" title="Favorite List"  description="Favorite List" />
       <siteMapNode url="SecuredPages/WishList.aspx" title="Wish List" description="Wish List" />
     </siteMapNode>
-    <siteMapNode url="SecuredPages/FullStore.aspx" title="Full Store" description="Full Store">
-      <siteMapNode url="SecuredPages/BookReview.aspx" title="Book Review"  description="Book Review" />
-
-    </siteMapNode>
-    <siteMapNode url="SecuredPages/CheckOut.aspx" title="Check Out" description="Check Out">
-      <siteMapNode url="SecuredPages/Cart.aspx" title="Cart" description="Cart" />
-    </siteMapNode>
+    <siteMapNode url="SecuredPages/FullStore.aspx" title="Full Store" description="Full Store"/>
+    <siteMapNode url="SecuredPages/Cart.aspx" title="Cart" description="Cart" />
     <siteMapNode url="AdminPages/AdminStore.aspx" title="Admin Store" description="Admin Store">
       <siteMapNode url="AdminPages/ManageUsers.aspx" title="User Roster" description="User Roster" />
       <siteMapNode url="AdminPages/RoleManagement.aspx" title="Role Management" description="Role Management" />

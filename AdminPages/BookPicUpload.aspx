@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="BookPic_upload.aspx.cs" Inherits="AdminPages_BookPic_upload" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="BookPicUpload.aspx.cs" Inherits="AdminPages_BookPic_upload" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentBody" Runat="Server">
       <div class="mainBody">
@@ -97,7 +97,7 @@
             <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" ></asp:BoundField>
             <asp:TemplateField HeaderText="Image">
             <ItemTemplate>
-                <asp:Image ID="ProductImage" runat="server" ImageUrl='<%# "ImageHandler.ashx?ID=" + Eval("ID") %>' />
+                <asp:Image ID="ProductImage" Height="200px" runat="server" ImageUrl='<%# "ImageHandler.ashx?ID=" + Eval("ID") %>' />
             </ItemTemplate>
                 <ItemStyle Wrap="False"></ItemStyle>
             </asp:TemplateField>

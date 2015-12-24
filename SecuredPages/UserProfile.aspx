@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Profile" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="User_Profile.aspx.cs" Inherits="User_Profile" %>
+﻿<%@ Page Title="Profile" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="UserProfile.aspx.cs" Inherits="UserProfile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentBody" Runat="Server">
     <div class="mainBody">
@@ -21,7 +21,7 @@
         </asp:LoginView>
         <br />
         <asp:Image ID="ProfileImage" runat="server" 
-                ImageUrl="~/Images/Default.png" Height="200px" Width="200px"/>
+                ImageUrl="~/Images/Default.png" Height="200px"/>
         <br />
         <asp:LinkButton ID="LinkEditProfilePic" runat="server"
             OnClick="LinkEditProfilePic_Click">Edit Profile Picture</asp:LinkButton>

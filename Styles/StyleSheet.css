@@ -186,8 +186,11 @@ TxtBoxFormat {
 #PnlFlUpld{
   
 }
-#ProfileImage {
+#ContentBody_ProfileImage {
     border-radius:20px;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
 }
 
 /****************************404***********************************/

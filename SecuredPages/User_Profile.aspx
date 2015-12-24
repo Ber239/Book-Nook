@@ -4,19 +4,16 @@
     <div class="mainBody">
 
     <div>
-        <asp:LoginStatus ID="LsMyAccount" runat="server" /><br /><br />
-        Hello, <asp:LoginName ID="LnMyAccount" runat="server" />
         <asp:LoginView ID="LvMyAccount" runat="server">
             <RoleGroups>
                 <asp:RoleGroup Roles="user">
                     <ContentTemplate>
-                        <p>If you can see this, you are a member of the user role.</p>
+                        <p>Hello <asp:LoginName ID="LnMyAccount" runat="server" />, you are a member of the user role.</p>
                     </ContentTemplate>
                 </asp:RoleGroup>
                 <asp:RoleGroup Roles="admin">
                     <ContentTemplate>
-			            <p>Congratulations, you are an administrator.</p>
-                        <p>Admin Info:</p>
+                        <p>Hello <asp:LoginName ID="LnMyAccount" runat="server" />, you are a member of the administrator role.</p>
                         <a href="../AdminPages/RoleManagement.aspx">Manage Roles</a><br />
                     </ContentTemplate>
                 </asp:RoleGroup>
@@ -24,10 +21,11 @@
         </asp:LoginView>
         <br />
         <asp:Image ID="ProfileImage" runat="server" 
-                ImageUrl="~/Images/Default.png" Height="200px" Width="200px" />
+                ImageUrl="~/Images/Default.png" Height="200px" Width="200px"/>
         <br />
         <asp:LinkButton ID="LinkEditProfilePic" runat="server"
             OnClick="LinkEditProfilePic_Click">Edit Profile Picture</asp:LinkButton>
+        <br />
          <asp:LinkButton ID="LinkChangePassword" runat="server"
             OnClick="LinkChangePassword_Click1">Change Password</asp:LinkButton>
         <br /><br />

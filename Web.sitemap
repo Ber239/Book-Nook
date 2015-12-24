@@ -19,6 +19,5 @@
       <siteMapNode url="AdminPages/RoleManagement.aspx" title="Role Management" description="Role Management" />
       
     </siteMapNode>
-    <siteMapNode url="Login.aspx" title="Login" description="Login"  />
   </siteMapNode>
 </siteMap>

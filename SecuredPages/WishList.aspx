@@ -20,8 +20,8 @@
                         
                         <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" InsertVisible="False" ReadOnly="True" Visible="false"></asp:BoundField>
                         <asp:BoundField DataField="UserName" HeaderText="UserName" SortExpression="UserName" Visible="false"></asp:BoundField>
-                        <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title"></asp:BoundField>
-                        <asp:BoundField DataField="DateAdded" HeaderText="DateAdded" SortExpression="DateAdded"></asp:BoundField>
+                        <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" HeaderStyle-CssClass="FormatHeader" ></asp:BoundField>
+                        <asp:BoundField DataField="DateAdded" HeaderText="Date Added" SortExpression="DateAdded" HeaderStyle-CssClass="FormatHeader" ></asp:BoundField>
                         <asp:CommandField ShowDeleteButton="True" />
                     </Columns>
                     <EditRowStyle BackColor="#7C6F57"></EditRowStyle>

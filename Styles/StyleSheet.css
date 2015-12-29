@@ -34,11 +34,6 @@ footer{
     color:black;
     background-color:#F1F1F1;
 }
-#GvCartDiv {
-    width:135px;
-    margin-left:auto;
-    margin-right:auto;
-}
 /*************************HomePage*************************/
    #hmpg-img{
             height:10em;
@@ -106,6 +101,9 @@ footer{
     height: 300px;
     width: 200px;
 }
+table#ContentBody_GvCart td {
+    padding:7px;
+}
 /***************************************************************/
 
 /***********************Fav List***************************************/
@@ -130,6 +128,9 @@ footer{
     */
 .FormatHeader {
     text-align:center;
+}
+table#ContentBody_GridView1 td {
+    padding:7px;
 }
 /***************************************************************/
 /***********************Home Page***************************************/
@@ -165,6 +166,10 @@ TxtBoxFormat {
 .Images{
             height: 150px;
         }
+
+table#ContentBody_GvFavorite td {
+    padding:7px;
+}
 /***************************Admin Page**********************************/
 #select_roles {
      

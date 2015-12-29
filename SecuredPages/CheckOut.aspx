@@ -2,7 +2,9 @@
 
     
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentBody" Runat="Server">
-        <div class="mainBody">
+    <div class="mainBody">
+
+        <!--
             <div id="personalInfo">
                 <h3>Personal Information</h3>
                 <label>First Name</label>
@@ -97,5 +99,111 @@
                 <br />
                 <asp:Button ID="BtnSubmitOrder" runat="server" Text="Submit Order" />
             </div>
+            -->
+        <div class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Personal Information</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="firstName">First Name</label>
+                    <div class="col-md-4">
+                        <input id="firstName" name="firstName" placeholder="" class="form-control input-md" type="text" />
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="lastName">Last Name</label>
+                    <div class="col-md-4">
+                        <input id="lastName" name="lastName" placeholder="" class="form-control input-md" type="text" />
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="address">Address</label>
+                    <div class="col-md-4">
+                        <input id="address" name="address" placeholder="" class="form-control input-md" type="text" />
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="city">City</label>
+                    <div class="col-md-4">
+                        <input id="city" name="city" placeholder="" class="form-control input-md" type="text" />
+
+                    </div>
+                </div>
+
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="state">State</label>
+                    <div class="col-md-4">
+                        <select id="state" name="state" class="form-control">
+                            <option value="1">New York</option>
+                            <option value="2">Illinois</option>
+                            <option value="3">Virginia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="zipCode">Zip Code</label>
+                    <div class="col-md-4">
+                        <input id="zipCode" name="zipCode" placeholder="" class="form-control input-md" type="text" />
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="phoneNumber">Phone Number</label>
+                    <div class="col-md-4">
+                        <input id="phoneNumber" name="phoneNumber" placeholder="" class="form-control input-md" type="text" />
+
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Info</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="cardNumber">Card Number</label>
+                    <div class="col-md-4">
+                        <input id="cardNumber" name="cardNumber" placeholder="" class="form-control input-md" type="text" />
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="securityCode">Security Code</label>
+                    <div class="col-md-4">
+                        <input id="securityCode" name="securityCode" placeholder="" class="form-control input-md" type="text" />
+
+                    </div>
+                </div>
+
+                <!-- Button (Double) -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="submitOrder"></label>
+                    <div class="col-md-4">
+                        <button id="submitOrder" name="submitOrder" class="btn btn-primary">Submit</button>
+                        <button id="cancelOrder" name="cancelOrder" class="btn btn-info">Cancel</button>
+                    </div>
+                </div>
+
+            </fieldset>
+
         </div>
+    </div>
 </asp:Content>

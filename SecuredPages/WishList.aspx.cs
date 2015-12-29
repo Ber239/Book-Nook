@@ -26,7 +26,7 @@ public partial class WishList : System.Web.UI.Page
                 CheckBox chkRow = (CheckBox)row.Cells[0].FindControl("CheckBox1");
                 if (chkRow.Checked)
                 {
-                    string title = row.Cells[4].Text;
+                    string title = row.Cells[1].Text;
                     string user = Membership.GetUser().UserName;
                     string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
                     SqlConnection connection = new SqlConnection(connectionString);
@@ -39,6 +39,7 @@ public partial class WishList : System.Web.UI.Page
                     connection.Open();
                     cmd.ExecuteNonQuery();
                     connection.Close();
+                    chkRow.Checked = false;
                 }
             }
         }

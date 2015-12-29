@@ -49,10 +49,11 @@ public partial class FullStore : System.Web.UI.Page
                     connection.Open();
                     cmd.ExecuteNonQuery();
                     connection.Close();
+                    chkRow.Checked = false;
                 }
             }
         }
-        MessageLabel.Text = "Book added to Cart";
+        MessageLabel.Text = "Books added to cart";
     }
 
     protected void BtnAddtoWish_Click(object sender, EventArgs e)
@@ -66,9 +67,7 @@ public partial class FullStore : System.Web.UI.Page
                 {
                     string title = row.Cells[3].Text;
                     string user = Membership.GetUser().UserName;
-                    int ID = Convert.ToInt32(row.Cells[1].Text);
-                    
-
+                    //int ID = Convert.ToInt32(row.Cells[7].Text);
                     string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
                     SqlConnection connection = new SqlConnection(connectionString);
                     string stmt = "INSERT INTO dbo.WishList(UserName, Title,DateAdded) VALUES(@UserName, @Title,@DateAdded)";
@@ -76,18 +75,17 @@ public partial class FullStore : System.Web.UI.Page
                     cmd.Parameters.Add("@UserName", SqlDbType.VarChar, 100);
                     cmd.Parameters.Add("@Title", SqlDbType.VarChar, 100);
                     cmd.Parameters.Add("@DateAdded", SqlDbType.DateTime, 100);
-                    
                     cmd.Parameters["@UserName"].Value = user;
                     cmd.Parameters["@Title"].Value = title;
                     cmd.Parameters["@DateAdded"].Value = DateTime.Now;
-
                     connection.Open();
                     cmd.ExecuteNonQuery();
                     connection.Close();
+                    chkRow.Checked = false;
                 }
             }
         }
-        MessageLabel.Text = "Book added to WishList";
+        MessageLabel.Text = "Books added to wishlist";
     }
 
     protected void BtnAddtoFav_Click(object sender, EventArgs e)
@@ -114,10 +112,11 @@ public partial class FullStore : System.Web.UI.Page
                     connection.Open();
                     cmd.ExecuteNonQuery();
                     connection.Close();
+                    chkRow.Checked = false;
                 }
             }
         }
 
-        MessageLabel.Text = "Book added to Favorites";
+        MessageLabel.Text = "Books added to favorites";
     }
 }

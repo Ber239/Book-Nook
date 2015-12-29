@@ -9,7 +9,7 @@
             <div>
                 <asp:GridView ID="GvFavorite" runat="server" DataSourceID="BookContent" HorizontalAlign="Center"
                     AutoGenerateColumns="False" DataKeyNames="Id" AllowPaging="True" AllowSorting="True" CellPadding="4" ForeColor="#333333" GridLines="None">
-                    <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
+                    <AlternatingRowStyle BackColor="White" ForeColor="#284775"></AlternatingRowStyle>
                     <Columns>
 
                         <asp:TemplateField>
@@ -17,24 +17,24 @@
                                 <asp:CheckBox runat="server" ID="CheckBox1" />
                             </ItemTemplate>
                         </asp:TemplateField>
-                        
+
                         <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" InsertVisible="False" ReadOnly="True" Visible="false"></asp:BoundField>
                         <asp:BoundField DataField="UserName" HeaderText="UserName" SortExpression="UserName" Visible="false"></asp:BoundField>
-                        <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" HeaderStyle-CssClass="FormatHeader" ></asp:BoundField>
-                        <asp:BoundField DataField="DateAdded" HeaderText="Date Added" SortExpression="DateAdded" HeaderStyle-CssClass="FormatHeader" ></asp:BoundField>
+                        <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" HeaderStyle-CssClass="FormatHeader"></asp:BoundField>
+                        <asp:BoundField DataField="DateAdded" HeaderText="Date Added" SortExpression="DateAdded" HeaderStyle-CssClass="FormatHeader"></asp:BoundField>
                         <asp:CommandField ShowDeleteButton="True" />
                     </Columns>
-                    <EditRowStyle BackColor="#7C6F57"></EditRowStyle>
+                    <EditRowStyle BackColor="#999999"></EditRowStyle>
 
-                    <FooterStyle BackColor="#1C5E55" ForeColor="White" Font-Bold="True" />
-                    <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
-                    <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
-                    <RowStyle BackColor="#E3EAEB" />
-                    <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
-                    <SortedAscendingCellStyle BackColor="#F8FAFA" />
-                    <SortedAscendingHeaderStyle BackColor="#246B61" />
-                    <SortedDescendingCellStyle BackColor="#D4DFE1" />
-                    <SortedDescendingHeaderStyle BackColor="#15524A" />
+                    <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
+                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                    <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                    <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                    <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                    <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                 </asp:GridView>
                 <asp:SqlDataSource ID="BookContent" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [WishList]" DeleteCommand="DELETE FROM WishList WHERE (Id = @id)">
                     <DeleteParameters>

@@ -28,14 +28,17 @@ public partial class WishList : System.Web.UI.Page
                 {
                     string title = row.Cells[1].Text;
                     string user = Membership.GetUser().UserName;
+                    string price = row.Cells[2].Text;
                     string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
                     SqlConnection connection = new SqlConnection(connectionString);
-                    string stmt = "INSERT INTO dbo.Cart(UserName, Title) VALUES(@UserName, @Title)";
+                    string stmt = "INSERT INTO dbo.Cart(UserName, Title, Price) VALUES(@UserName, @Title, @Price)";
                     SqlCommand cmd = new SqlCommand(stmt, connection);
                     cmd.Parameters.Add("@UserName", SqlDbType.VarChar, 100);
                     cmd.Parameters.Add("@Title", SqlDbType.VarChar, 100);
+                    cmd.Parameters.Add("@Price", SqlDbType.NChar, 10);
                     cmd.Parameters["@UserName"].Value = user;
                     cmd.Parameters["@Title"].Value = title;
+                    cmd.Parameters["@Price"].Value = price;
                     connection.Open();
                     cmd.ExecuteNonQuery();
                     connection.Close();

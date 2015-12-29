@@ -67,17 +67,17 @@ public partial class FullStore : System.Web.UI.Page
                 {
                     string title = row.Cells[3].Text;
                     string user = Membership.GetUser().UserName;
-                    //int ID = Convert.ToInt32(row.Cells[7].Text);
+                    string price = row.Cells[7].Text;
                     string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
                     SqlConnection connection = new SqlConnection(connectionString);
-                    string stmt = "INSERT INTO dbo.WishList(UserName, Title,DateAdded) VALUES(@UserName, @Title,@DateAdded)";
+                    string stmt = "INSERT INTO dbo.WishList(UserName, Title, Price) VALUES(@UserName, @Title, @Price)";
                     SqlCommand cmd = new SqlCommand(stmt, connection);
                     cmd.Parameters.Add("@UserName", SqlDbType.VarChar, 100);
                     cmd.Parameters.Add("@Title", SqlDbType.VarChar, 100);
-                    cmd.Parameters.Add("@DateAdded", SqlDbType.DateTime, 100);
+                    cmd.Parameters.Add("@Price", SqlDbType.NChar, 10);
                     cmd.Parameters["@UserName"].Value = user;
                     cmd.Parameters["@Title"].Value = title;
-                    cmd.Parameters["@DateAdded"].Value = DateTime.Now;
+                    cmd.Parameters["@Price"].Value = price;
                     connection.Open();
                     cmd.ExecuteNonQuery();
                     connection.Close();
@@ -97,18 +97,19 @@ public partial class FullStore : System.Web.UI.Page
                 CheckBox chkRow = (CheckBox)row.Cells[0].FindControl("CheckBox1");
                 if (chkRow.Checked)
                 {
-                    string title = row.Cells[3].Text;            
+                    string title = row.Cells[3].Text;
                     string user = Membership.GetUser().UserName;
-      
+                    string price = row.Cells[7].Text;
                     string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
                     SqlConnection connection = new SqlConnection(connectionString);
-                    string stmt = "INSERT INTO dbo.Favorites(UserName, Title) VALUES(@UserName, @Title)";
+                    string stmt = "INSERT INTO dbo.Favorites(UserName, Title, Price) VALUES(@UserName, @Title, @Price)";
                     SqlCommand cmd = new SqlCommand(stmt, connection);
                     cmd.Parameters.Add("@UserName", SqlDbType.VarChar, 100);
                     cmd.Parameters.Add("@Title", SqlDbType.VarChar, 100);
+                    cmd.Parameters.Add("@Price", SqlDbType.NChar, 10);
                     cmd.Parameters["@UserName"].Value = user;
                     cmd.Parameters["@Title"].Value = title;
-
+                    cmd.Parameters["@Price"].Value = price;
                     connection.Open();
                     cmd.ExecuteNonQuery();
                     connection.Close();

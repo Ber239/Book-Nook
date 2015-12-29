@@ -6,7 +6,10 @@
     padding:10px;
     text-align:center;
 }
-
+#googleMap {
+    padding:10px;
+    margin:0 auto;
+}
 .footer {
     height:100px;
 }
@@ -70,7 +73,7 @@ footer{
         }
 #map {
         height: 100%;
-      }
+}
 
 /***************************************************************/
 
